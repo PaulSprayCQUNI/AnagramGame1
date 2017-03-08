@@ -6,6 +6,7 @@ This is a private repository and contains examples and documents found in the le
 
 ## Resources
 
+* [Concepts and Terminology](concepts.md)
 * [Java Tutorials](https://docs.oracle.com/javase/tutorial/)
 * [Java API](https://docs.oracle.com/javase/8/docs/api/)
 * [COIT11134](https://moodle.cqu.edu.au/course/view.php?id=6073)
