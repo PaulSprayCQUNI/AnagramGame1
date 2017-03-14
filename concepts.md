@@ -39,3 +39,10 @@ Note the above is not the only classification of programming paradigms, and most
 * **Static variables** are shared across objects of same class
 * **Static methods** do not operate on objects (only primitive types and static variables)
 
+## Inheritance
+
+* One class can **inherit** members (instance variables, methods) from another class, i.e. **is-a** relationship
+* A **subclass** inherits from a **superclass** using the **extend** keyword
+* **super** refers to the superclass
+* Methods from superclass can be **overridden** in the subclass with **@Override** keyword
+* **toString()** method prints the object as a string; useful for debugging
