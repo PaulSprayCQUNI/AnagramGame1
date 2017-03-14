@@ -45,4 +45,5 @@ Note the above is not the only classification of programming paradigms, and most
 * A **subclass** inherits from a **superclass** using the **extend** keyword
 * **super** refers to the superclass
 * Methods from superclass can be **overridden** in the subclass with **@Override** keyword
+* **Object** is the **cosmic superclass**
 * **toString()** method prints the object as a string; useful for debugging
