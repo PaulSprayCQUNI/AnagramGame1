@@ -49,9 +49,11 @@ Some random comments and tips on programming style and common mistakes that may 
 
 - If you find you have a long section of code, think whether it makes sense to move parts of the code into separate methods. This can be done commonly for GUI code. Instead of putting all the GUI element initialisation together, separate into a set of methods:
 
-```initNewEmployeePanel();
+```
+initNewEmployeePanel();
 initListOfEmployeesPanel();
-initControlButtons();```
+initControlButtons();
+```
 
 
 
