@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<ClassDiagram name="Test">
+  <ClassDiagramComponents>
+    <Class name="Student" package="" visibility="public" xPosition="377.0" yPosition="320.0">
+      <Fields>
+        <Field name="studentId" type="Integer" visibility="private"/>
+      </Fields>
+      <Constructors/>
+      <Methods>
+        <Method name="convertId" returnType="Integer" visibility="public">
+          <Argument type="Integer" name="id"/>
+        </Method>
+      </Methods>
+    </Class>
+    <Class name="Person" package="" visibility="public" xPosition="403.0" yPosition="98.0">
+      <Fields>
+        <Field name="firstName" type="String" visibility="private"/>
+        <Field name="lastName" type="String" visibility="private"/>
+      </Fields>
+      <Constructors/>
+      <Methods/>
+    </Class>
+  </ClassDiagramComponents>
+  <ClassDiagramRelations>
+    <IsRelation name="is" source="Student" target="Person"/>
+  </ClassDiagramRelations>
+</ClassDiagram>
