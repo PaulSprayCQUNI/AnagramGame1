@@ -6,7 +6,23 @@ Install [NetBeans](https://netbeans.org/)
 
 ## Git
 
-Git is included in Netbeans. Assuming you already have a Github account, see the [Netbeans Git Support](https://netbeans.org/kb/docs/ide/git.html) for setup instructions, or ask Steve to see his setup.
+Git is included in Netbeans. Assuming you already have a Github account, see the [Netbeans Git Support](https://netbeans.org/kb/docs/ide/git.html) for setup instructions, or ask Steve to see his setup. The basic steps are:
+
+1. Team -> Git -> Clone ...
+2. Repository: https://github.com/steve-cqu/oop.git
+3. Clone into: C:\Users\you\git
+4. The above steps will pull (download) all files from the shared OOP repo into your hard drive in the git directory
+5. Now you can open projects/code
+
+Then during working you:
+
+1. Add new files/projects (performed locally on your computer)
+2. Commit those files (local)
+3. Push those files to the Github repo (uploads)
+
+Also before you start working you should Pull (download) files from the Github repo
+
+
 
 ## UML
 
