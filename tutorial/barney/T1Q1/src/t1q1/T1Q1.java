@@ -3,20 +3,19 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-package tut1q1;
+package t1q1;
 
 /**
  *
- * @author zseni
+ * @author s0292091
  */
-public class Tut1Q1 {
+public class T1Q1 {
 
     /**
      * @param args the command line arguments
      */
     public static void main(String[] args) {
         // TODO code application logic here
-        system.out.println("this is a thing")
     }
     
 }
