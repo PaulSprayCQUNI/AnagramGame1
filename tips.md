@@ -2,6 +2,20 @@
 
 Some random comments and tips on programming style and common mistakes that may make your assignment submissions (and general app development) better.
 
+## Be Systematic
+
+Have a system in developing code, and try to follow that system all the time. Once you have a good system and have followed it several times you it will become natural for you. An example: you want to create a new class. The steps you can follow are:
+
+1. Create the class file and `public ClassName` at top
+2. Define the instance variables
+3. Generate necessary contructor definitions (default and parameterised)
+4. Generate the getters and setters automatically from the instance variables
+5. Write a toString method at the end
+6. Now go back and fill in the missing parts of the constructor, getters and setters
+7. Add other necessary code
+8. Write a tester class (in a separate file)
+9. Do basic testing
+
 ## Good Names Early
 
 - When naming variables, fields, methods and classes, carefully choose good names for them early in your design. 

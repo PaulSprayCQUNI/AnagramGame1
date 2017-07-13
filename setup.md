@@ -4,6 +4,13 @@
 
 Install [NetBeans](https://netbeans.org/)
 
+### Changing Braces Styles, {}
+
+NetBeans ses a default braces style of having the left open brace on the _same line as code_. Another common style is to have the left open brace on the line _following the code_. To modify this style, as well as many other options, go to _Tools_ menu, then select _Options_. Choose _Editor_ button and the _Formatting_ tab. Then select the Language as _Java_ and the Category as _Braces_. Change the three values of Braces Placement (Class Declaration, Method Declaration and Other) to your personal preferences. See the screenshot below.
+
+![Changing braces style in NetBeans](https://github.com/steve-cqu/oop/raw/master/images/netbeans-formatting-braces-1.png)
+
+
 ## Git
 
 Git is included in Netbeans. Assuming you already have a Github account, see the [Netbeans Git Support](https://netbeans.org/kb/docs/ide/git.html) for setup instructions, or ask Steve to see his setup. The basic steps are:
@@ -18,7 +25,7 @@ Git is included in Netbeans. Assuming you already have a Github account, see the
 
 I recommend adding 4 Git shortcut buttons to the Toolbar. First, right click on the top toolbar and click _Customize_
 
-![Customize toolbar](../images/netbeans-git-customize-toolbar.png)
+![Customize toolbar](https://github.com/steve-cqu/oop/raw/master/images/netbeans-git-customize-toolbar.png)
 
 Then Add the following from Git:
 - Add
@@ -26,11 +33,11 @@ Then Add the following from Git:
 - Pull from upstream
 - Push to upstream
 
-![Add from git](../images/netbeans-git-toolbar-drag-1.png)
+![Add from git](https://github.com/steve-cqu/oop/raw/master/images/netbeans-git-toolbar-drag-1.png)
 
 You should have the four buttons on the right as follows:
 
-![Toolbar buttons for Git](../images/netbeans-git-buttons-1.png)
+![Toolbar buttons for Git](https://github.com/steve-cqu/oop/raw/master/images/netbeans-git-buttons-1.png)
 
 Use the buttons when you have selected your project. The workflow is:
 
