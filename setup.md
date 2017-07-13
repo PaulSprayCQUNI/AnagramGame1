@@ -4,13 +4,6 @@
 
 Install [NetBeans](https://netbeans.org/)
 
-### Changing Braces Styles, {}
-
-NetBeans ses a default braces style of having the left open brace on the _same line as code_. Another common style is to have the left open brace on the line _following the code_. To modify this style, as well as many other options, go to _Tools_ menu, then select _Options_. Choose _Editor_ button and the _Formatting_ tab. Then select the Language as _Java_ and the Category as _Braces_. Change the three values of Braces Placement (Class Declaration, Method Declaration and Other) to your personal preferences. See the screenshot below.
-
-![Changing braces style in NetBeans](https://github.com/steve-cqu/oop/raw/master/images/netbeans-formatting-braces-1.png)
-
-
 ## Git
 
 Git is included in Netbeans. Assuming you already have a Github account, see the [Netbeans Git Support](https://netbeans.org/kb/docs/ide/git.html) for setup instructions, or ask Steve to see his setup. The basic steps are:
@@ -75,4 +68,27 @@ When completing a tutorial question you will often have at least two classes: th
 ![Create new class within package]()
 
 3. Now you can go ahead with developing the _Employee_ class, and then testing it with _EmployeeTest_. 
+
+### Useful Shortcuts
+
+A few ways to automatically generate/format code:
+
+1. Insert a constructor: _Source_ -> _Insert Code ..._ -> _Constructor ..._ or `Alt-Insert`
+
+2. Insert instance variables/fields with getters/setters: _Source_ -> _Insert Code ..._ -> _Add Property ..._ or `Alt-Insert`
+
+3. Generate getters/setters (only if you manually create instance variables/fields; otherwise use above): _Refactor_ -> _Encapsulate Fields ..._
+
+4. Insert `toString()` method: `Alt-Insert`
+
+5. Reformat code (e.g. alignment, braces): _Source_ -> _Format_ or `Alt-Shift-F`
+
+I suggest you explore other shortcuts available via the _Source_ menu and _Refactor_ menu.
+
+### Changing Braces Styles, {}
+
+NetBeans ses a default braces style of having the left open brace on the _same line as code_. Another common style is to have the left open brace on the line _following the code_. To modify this style, as well as many other options, go to _Tools_ menu, then select _Options_. Choose _Editor_ button and the _Formatting_ tab. Then select the Language as _Java_ and the Category as _Braces_. Change the three values of Braces Placement (Class Declaration, Method Declaration and Other) to your personal preferences. See the screenshot below.
+
+![Changing braces style in NetBeans](https://github.com/steve-cqu/oop/raw/master/images/netbeans-formatting-braces-1.png)
+
 
