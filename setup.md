@@ -53,3 +53,19 @@ An example:
 
 For an example of use see this [Youtube video](https://www.youtube.com/watch?v=QME_S7gPnVI)
 
+## NetBeans Help
+
+Some shortcuts and advice using NetBeans for OOP.
+
+### Workflow
+
+When completing a tutorial question you will often have at least two classes: the core class and a tester class, e.g. class _Employee_ and class _EmployeeTest_. The following is a suggested workflow for creating a project for such a solution:
+
+1. Create a new project called _EmployeeTest_. This will create a new file/class _EmployeeTest_ within the package _employeetest_. The `main` method is automatically created.
+
+2. Right-click on _employeetest_ package and select _New_ -> _Java Class..._. Create the file/class _Employee_. It is important the this new class is created within the _employeetest_ package (not outside it). Below is a screenshot:
+
+![Create new class within package]()
+
+3. Now you can go ahead with developing the _Employee_ class, and then testing it with _EmployeeTest_. 
+
