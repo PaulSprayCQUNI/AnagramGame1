@@ -14,14 +14,37 @@ Git is included in Netbeans. Assuming you already have a Github account, see the
 4. The above steps will pull (download) all files from the shared OOP repo into your hard drive in the git directory
 5. Now you can open projects/code
 
-Then during working you:
+### Working with Git
 
-1. Add new files/projects (performed locally on your computer)
-2. Commit those files (local)
-3. Push those files to the Github repo (uploads)
+I recommend adding 4 Git shortcut buttons to the Toolbar. First, right click on the top toolbar and click _Customize_
 
-Also before you start working you should Pull (download) files from the Github repo
+![Customize toolbar](../images/netbeans-git-customize-toolbar.png)
 
+Then Add the following from Git:
+- Add
+- Commit ...
+- Pull from upstream
+- Push to upstream
+
+![Add from git](../images/netbeans-git-toolbar-drag-1.png)
+
+You should have the four buttons on the right as follows:
+
+![Toolbar buttons for Git](../images/netbeans-git-buttons-1.png)
+
+Use the buttons when you have selected your project. The workflow is:
+
+1. Add new files to Git only once (e.g. if the files have already been Added, no need to add again). This is a local only operation (only performed on your hard disk)
+2. Commit ... when changes have been made (e.g. a file already added has been edited). Local only operation.
+3. Pull from upstream to get the latest files from the Github Repository. This downloads latest files from  Github.
+4. Push to upstream to put your edits on Github. This uploads latest files to Github.
+
+An example:
+
+- At start of the tutorial _Pull from upstream_
+- Create new files and _add_ them
+- As you make changes _Commit ..._ them. You can make multiple _Commits_ (e.g. one commit for each version)
+- At the end of the tutorial, _Pull from upstream_ and then _Push to upstream_
 
 
 ## UML
