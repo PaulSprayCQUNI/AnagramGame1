@@ -11,11 +11,54 @@ package t1q1;
  */
 public class T1Q1 {
 
-    /**
-     * @param args the command line arguments
-     */
-    public static void main(String[] args) {
-        // TODO code application logic here
+    private Double length;
+    private Double width;
+
+    public T1Q1() {
+        setLength(1.0);
+        setWidth(1.0);
     }
-    
+
+    /**
+     * @return the length
+     */
+    public Double getLength() {
+        return length;
+    }
+
+    /**
+     * @param length the length to set
+     */
+    public void setLength(Double length) {
+        if (length < 0.0 && length > 20.0) {
+            length = 1.0;
+        }
+        this.length = length;
+    }
+
+    /**
+     * @return the width
+     */
+    public Double getWidth() {
+        return width;
+    }
+
+    /**
+     * @param width the width to set
+     */
+    public void setWidth(Double width) {
+        if (width < 0.0 && width > 20.0) {
+            width = 1.0;
+        }
+        this.width = width;
+    }
+
+    public Double getArea() {
+        return getLength() * getWidth();
+    }
+
+    public Double getPerimeter() {
+        return 2 * getLength()+ 2 * getWidth();
+    }
+
 }
