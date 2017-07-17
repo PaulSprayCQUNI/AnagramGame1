@@ -1,5 +1,11 @@
 # Setup Java, Netbeans etc.
 
+## Video: Git, NetBeans and Shortcuts
+
+A 22 minute screencast of setting up NetBeans to use a Github repository, as well as a few NetBeans shortcuts, such as setting a license and generating code. 
+
+[NetBeans and Git video](https://www.youtube.com/edit?o=U&video_id=QOH13N68i44)
+
 ## NetBeans
 
 Install [NetBeans](https://netbeans.org/)
