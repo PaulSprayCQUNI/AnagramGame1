@@ -18,6 +18,10 @@ public class savingsAccount {
         this.balance = balance;
     }
    
+    public double calculateMonthlyInterest(double monthlyInterestRate){
+        double monthlyInterest = balance * annualInterestRate / 12;
+        return monthlyInterest;
+    }
     
     private double balance;
 
