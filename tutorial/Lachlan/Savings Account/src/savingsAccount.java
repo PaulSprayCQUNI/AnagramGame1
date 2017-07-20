@@ -23,6 +23,27 @@ public class savingsAccount {
         return monthlyInterest;
     }
     
+        private static double modifyInterestRate;
+        if ()
+    /**
+     * Get the value of modifyInterestRate
+     *
+     * @return the value of modifyInterestRate
+     */
+    public static double getModifyInterestRate() {
+        return modifyInterestRate;
+    }
+
+    /**
+     * Set the value of modifyInterestRate
+     *
+     * @param modifyInterestRate new value of modifyInterestRate
+     */
+    public static void setModifyInterestRate(double modifyInterestRate) {
+        savingsAccount.modifyInterestRate = modifyInterestRate;
+    }
+
+    
     private double balance;
 
     /**
