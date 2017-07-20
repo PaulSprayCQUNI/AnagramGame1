@@ -11,7 +11,7 @@ package vehicletest;
  */
 public class Car extends Vehicle {
 
-    public Car(int passengers, String model, String yearMonth, double fuelEconomy) {
+    public Car(String model, String yearMonth, double fuelEconomy, int passengers) {
         super(model, yearMonth, fuelEconomy);
         this.passengers = passengers;
     }
