@@ -48,30 +48,42 @@ public class GuiDemo1Frame extends JFrame {
 
         setLayout(new GridLayout(1, 2));
 
-        lbl1 = new JLabel("Hello");
-        lbl2 = new JLabel("Everyone");
-        btn1 = new JButton("Press me");
-        btn2 = new JButton("Go");
-        btn3 = new JButton("Button 3");
-        btn4 = new JButton("Button 4");
-        btn5 = new JButton("Button 5");
         pnl1 = new JPanel();
+        pnl1.setLayout(new BorderLayout());
+
         pnl2 = new JPanel();
 
-        pnl1.setLayout(new BorderLayout());
+        lbl1 = new JLabel("Hello");
+        lbl2 = new JLabel("Everyone");
+        
+        btn1 = new JButton("Exit1");
+        btn1.addActionListener(new ActionListener() {
+            public void actionPerformed (ActionEvent e) {
+                System.exit(0);
+            }
+        });
+        
+        btn2 = new JButton("Exit2");
+        btn2.addActionListener(event -> System.exit(0));
+        
+        
+        ButtonAction action;
+        btn3 = new JButton("Button 3");
+        action = new ButtonAction("three");
+        btn3.addActionListener(action);        
+
+        btn4 = new JButton("Button 4");
+        action = new ButtonAction("four");
+        btn4.addActionListener(action);
+
+        btn5 = new JButton("Button 5");
+        action = new ButtonAction("five");
+        btn5.addActionListener(action);
 
         pnl1.add(lbl1, BorderLayout.NORTH);
         pnl1.add(btn1, BorderLayout.WEST);
         pnl1.add(btn5, BorderLayout.EAST);
-
-        ButtonAction action = new ButtonAction("four");
-        btn4.addActionListener(action);
-        action = new ButtonAction("three");
-        btn3.addActionListener(action);        
-        
-        action = new ButtonAction("five");
-        btn5.addActionListener(action);     
-        
+             
         pnlSouth = new JPanel(new FlowLayout());
         pnlSouth.add(btn3);
         pnlSouth.add(btn4);
