@@ -78,7 +78,9 @@ public class GuiDemo1Frame extends JFrame {
 
         btn5 = new JButton("Button 5");
         action = new ButtonAction("five");
-        btn5.addActionListener(action);
+        btn5.addActionListener(event -> 
+                JOptionPane.showMessageDialog(this, "Hello"));
+        
 
         pnl1.add(lbl1, BorderLayout.NORTH);
         pnl1.add(btn1, BorderLayout.WEST);
