@@ -1,4 +1,4 @@
-import java.io.IOException;
+import java.io.*;
 import java.lang.IllegalStateException;
 import java.nio.file.Files;
 import java.nio.file.Path;
@@ -11,7 +11,7 @@ public class PersonReader {
 	private ArrayList<Person> people;
 	private static Scanner fileScanner;
 
-	public PersonReader (String fileName) {
+	public PersonReader (String fileName) throws MyFormatException {
 
 		// Open the file
 		try {
@@ -42,7 +42,11 @@ public class PersonReader {
 			try {
 				p.setFirstName(lineScanner.next());
 				p.setLastName(lineScanner.next());
-				p.setYearOfBirth(Integer.parseInt(lineScanner.next()));
+                                Integer y = Integer.parseInt(lineScanner.next());
+                                if (y<0) {
+                                    throw new MyFormatException("negative year for " + p.getFirstName() + " ");
+                                }
+				p.setYearOfBirth(y);
 			}
 			// Wrong format of fields
 			catch (IllegalArgumentException argumentException) {
