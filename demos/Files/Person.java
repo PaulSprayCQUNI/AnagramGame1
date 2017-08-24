@@ -3,7 +3,7 @@ public class Person {
 	private String lastName;
 	private Integer yearOfBirth;
 
-	public Person() {
+	public Person()  {
 		setFirstName("");
 		setLastName("");
 		setYearOfBirth(0);
