@@ -9,8 +9,14 @@ public class PersonTester {
 		ArrayList<Person> personList = new ArrayList<Person> ();
 
 		// Read list of people from comma separated file
-		PersonReader pr = new PersonReader("people.txt");
-		personList = pr.getPeople();
+                try {
+                    PersonReader pr = new PersonReader("people.txt");
+       		personList = pr.getPeople();
+                }
+                catch(MyFormatException e) {
+                    System.out.println("Oh no! I couldn't read the file.");
+                    System.exit(1);
+                }
 
 		// Add a new person to list
 		personList.add(new Person("XXX","YYY",1900));
