@@ -26,16 +26,17 @@ public class LinkedListTest
 
       ListIterator<String> aIter = a.listIterator();
       Iterator<String> bIter = b.iterator();
-
+               
       while (bIter.hasNext())
       {
          if (aIter.hasNext()) aIter.next();
          aIter.add(bIter.next());
       }
 
-      System.out.println(a);
+      System.out.println("XX" + a);
 
       // remove every second word from b
+      System.out.println("Before" + b);
 
       bIter = b.iterator();
       while (bIter.hasNext())
@@ -48,7 +49,7 @@ public class LinkedListTest
          }
       }
 
-      System.out.println(b);
+      System.out.println("After" + b);
 
       // bulk operation: remove all words in b from a
 
