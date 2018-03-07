@@ -1,4 +1,4 @@
-import java.time.*;
+import java.time.LocalDate;
 
 /**
  * This program tests the Employee class.
@@ -17,8 +17,11 @@ public class EmployeeTest
       staff[2] = new Employee("Tony Tester", 40000, 1990, 3, 15);
 
       // raise everyone's salary by 5%
-      for (Employee e : staff)
-         e.raiseSalary(5);
+		//      for (Employee e : staff)
+		// e.raiseSalary(5);
+		for (int i = 0; i<3; i++) {
+			staff[i].raiseSalary(5);
+		}
 
       // print out information about all Employee objects
       for (Employee e : staff)
@@ -50,6 +53,11 @@ class Employee
       return salary;
    }
 
+	public void setSalary(double salary)
+	{
+		this.salary = salary;
+	}
+	
    public LocalDate getHireDay()
    {
       return hireDay;
@@ -57,7 +65,8 @@ class Employee
 
    public void raiseSalary(double byPercent)
    {
-      double raise = salary * byPercent / 100;
-      salary += raise;
+      double raise = salary * byPercent / 100; // 50
+		salary = salary + raise;
+      salary += raise; // salary = 150
    }
 }
