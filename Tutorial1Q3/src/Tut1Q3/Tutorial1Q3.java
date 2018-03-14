@@ -20,7 +20,7 @@ public class Tutorial1Q3 extends JFrame
         this.setBounds(400, 400, 400, 400);
         
         
-        lblRadius.        
+        //lblRadius.        
         
         setLayout(new FlowLayout());
         this.setVisible(true);
