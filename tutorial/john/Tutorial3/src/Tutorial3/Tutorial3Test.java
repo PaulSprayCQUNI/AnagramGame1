@@ -13,15 +13,15 @@ public class Tutorial3Test
 {
     public static void main(String[] args)
     {
-        Employee[] pWorkers = new Employee[5];
+        Employee[] pStaff = new Employee[5];
         
-        pWorkers[0] = new PieceWorker("Alex", "Kuchas","450480",50,2);
-        pWorkers[1] = new PieceWorker("Thomas", "Jefferson", "124506", 100, 1);
-        pWorkers[2] = new PieceWorker("Harold", "Holt", "687098709", 60, 3);
-        pWorkers[3] = new SalariedWorker("John", "Barber", "3098098", 50000);
-        pWorkers[4] = new SalariedWorker("Robert", "Menzies", "90909", 97000);
+        pStaff[0] = new PieceWorker("Alex", "Kuchas","450480",50,2);
+        pStaff[1] = new PieceWorker("Thomas", "Jefferson", "124506", 100, 1);
+        pStaff[2] = new PieceWorker("Harold", "Holt", "687098709", 60, 3);
+        pStaff[3] = new SalariedWorker("John", "Barber", "3098098", 50000);
+        pStaff[4] = new SalariedWorker("Robert", "Menzies", "90909", 97000);
         
-        for (Employee pw : pWorkers)
+        for (Employee pw : pStaff)
             System.out.println(pw.toString());
     }
 }
