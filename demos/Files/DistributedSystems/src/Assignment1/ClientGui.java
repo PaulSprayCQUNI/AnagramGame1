@@ -12,11 +12,11 @@ import javax.swing.JFrame;
  *
  * @author brook
  */
-public class LocationGui {
-    
-        public static void main(String[] args) {
+public class ClientGui {
+
+    public static void main(String[] args) {
         EventQueue.invokeLater(() -> {
-            LocationFrame frame = new LocationFrame();
+            ClientFrame frame = new ClientFrame();
             frame.setTitle("Hills School");
             frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
             frame.setSize(400, 150);
