@@ -56,15 +56,20 @@ public class PersonReader {
                 }
                 p.setYearOfBirth(y);
             } // Wrong format of fields
-            catch (IllegalArgumentException argumentException) {
+            catch (IllegalArgumentException e) {
                 System.err.println("Error reading file due to illegal argument. Terminating.");
                 System.exit(1);
             } // File formatted incorrectly
-            catch (NoSuchElementException elementException) {
-                System.err.println("Error read file due to no such element. Terminating.");
+            catch (NoSuchElementException e) {
+                System.err.println("Error reading file due to no such element. Terminating.");
                 System.exit(1);
             }
-
+            catch (MyFormatException e) {
+                System.err.println("Error reading file due to wrong format. Terminating.");
+                System.err.println(e);
+                System.exit(1);
+            }
+            
             // Add the person to array
             people.add(p);
 

@@ -17,6 +17,6 @@ public class MyFormatException extends IOException {
     }
 
     public MyFormatException(String message) {
-        super("Something wrong " + message);
+        super("Something wrong with format: " + message);
     }
 }

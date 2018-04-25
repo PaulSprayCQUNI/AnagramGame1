@@ -24,7 +24,7 @@ public class PersonTester {
             PersonReader pr = new PersonReader("people.txt");
             personList = pr.getPeople();
         } catch (MyFormatException e) {
-            System.out.println("Oh no! I couldn't read the file.");
+            System.out.println("Oh no! I couldn't read the file." + e);
             System.exit(1);
         }
 
