@@ -64,6 +64,7 @@ public class PersonReader {
                 System.err.println("Error reading file due to no such element. Terminating.");
                 System.exit(1);
             }
+            // If you remove the following catch, then this error will be caught in the main
             catch (MyFormatException e) {
                 System.err.println("Error reading file due to wrong format. Terminating.");
                 System.err.println(e);
