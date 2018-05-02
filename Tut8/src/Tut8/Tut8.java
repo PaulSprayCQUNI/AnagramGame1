@@ -94,7 +94,7 @@ public class Tut8
         }
         catch (InvalidSubscriptException e)
         {
-            System.out.println("Should throw an...");
+            System.out.println("Caught an exception");
         }
         
     }

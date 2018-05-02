@@ -18,4 +18,8 @@ public class InvalidSubscriptException extends IOException
         System.out.println("Exception!");
     }
     
+    void printDetails()
+    {
+        super.toString();
+    }
 }
