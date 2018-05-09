@@ -3,7 +3,7 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-package fileops2;
+package fileops3;
 
 /**
  *
@@ -55,6 +55,26 @@ public class PersonReader {
                     throw new MyFormatException("negative year for " + p.getFirstName() + " ");
                 }
                 p.setYearOfBirth(y);
+
+                // Must store number of elements in array in file
+                int numAddresses = Integer.parseInt(lineScanner.next());
+
+                // Read the Address
+                for (int i = 0; i < numAddresses; i++) {
+                    try {
+                        Address a = new Address();
+                        a.setStreet(lineScanner.next());
+                        a.setCity(lineScanner.next());
+                        a.setPostCode(Integer.parseInt(lineScanner.next()));
+                        a.setState(lineScanner.next());
+                        p.addAddress(a);
+
+                    } catch (IllegalArgumentException e) {
+                        System.err.println("Error reading file due to illegal argument. Terminating.");
+                        System.exit(1);
+                    }
+                }
+
             } // Wrong format of fields
             catch (IllegalArgumentException e) {
                 System.err.println("Error reading file due to illegal argument. Terminating.");
@@ -63,14 +83,13 @@ public class PersonReader {
             catch (NoSuchElementException e) {
                 System.err.println("Error reading file due to no such element. Terminating.");
                 System.exit(1);
-            }
-            // If you remove the following catch, then this error will be caught in the main
+            } // If you remove the following catch, then this error will be caught in the main
             catch (MyFormatException e) {
                 System.err.println("Error reading file due to wrong format. Terminating.");
                 System.err.println(e);
                 System.exit(1);
             }
-            
+
             // Add the person to array
             people.add(p);
 

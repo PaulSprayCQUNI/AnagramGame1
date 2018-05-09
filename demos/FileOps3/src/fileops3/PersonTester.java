@@ -3,7 +3,7 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-package fileops2;
+package fileops3;
 
 /**
  *
@@ -37,7 +37,7 @@ public class PersonTester {
         }
 
         // Write list of people to file
-        PersonWriter w = new PersonWriter("people.txt", personList);
+        //PersonWriter w = new PersonWriter("people.txt", personList);
     }
 
 }

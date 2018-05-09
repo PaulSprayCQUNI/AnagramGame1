@@ -3,7 +3,9 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-package fileops2;
+package fileops3;
+
+import java.util.ArrayList;
 
 /**
  *
@@ -13,18 +15,22 @@ public class Person {
 
     private String firstName;
     private String lastName;
-    private Integer yearOfBirth;
+    private Integer yearOfBirth;   
+    private ArrayList<Address> addressList;
+
 
     public Person() {
         this.firstName = "";
         this.lastName = "";
         this.yearOfBirth = 0;
+        this.addressList = new ArrayList<>();
     }
 
     public Person(String firstName, String lastName, Integer yearOfBirth) {
         this.firstName = firstName;
         this.lastName = lastName;
         this.yearOfBirth = yearOfBirth;
+        this.addressList = new ArrayList<>();
     }
 
     public String getFirstName() {
@@ -50,9 +56,31 @@ public class Person {
     public void setYearOfBirth(Integer yearOfBirth) {
         this.yearOfBirth = yearOfBirth;
     }
+    
+        /**
+     * Get the value of addressList
+     *
+     * @return the value of addressList
+     */
+    public ArrayList<Address> getAddressList() {
+        return addressList;
+    }
 
+    /**
+     * Set the value of addressList
+     *
+     * @param addressList new value of addressList
+     */
+    public void setHome(ArrayList<Address> addressList) {
+        this.addressList = addressList;
+    }
+
+    public void addAddress(Address a) {
+        this.addressList.add(a);
+    }
+    
     @Override
     public String toString() {
-        return firstName + " " + lastName + " " + yearOfBirth;
+        return firstName + " " + lastName + " " + yearOfBirth + " " + addressList;
     }
 }
