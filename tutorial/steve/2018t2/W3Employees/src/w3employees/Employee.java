@@ -9,14 +9,14 @@ package w3employees;
  *
  * @author Steven Gordon <s.d.gordon@cqu.edu.au>
  */
-public class Employee {
+public abstract class Employee {
     
     private String firstName;
     private String lastName;
     private int taxFileNumber;
     private int hireYear;
     private String department;
-
+    
     public Employee() {
         this.firstName = "";
         this.lastName = "";
@@ -128,6 +128,9 @@ public class Employee {
         this.firstName = firstName;
     }
 
+    
+    public abstract double earnings();
+    
     @Override
     public String toString() {
         // "Employee is Steven Gordon. SSN = 123456."

@@ -62,6 +62,10 @@ public class PieceWorker extends Employee {
     public void setWage(double wage) {
         this.wage = wage;
     }
+    
+    public double earnings() {
+        return this.wage * this.pieces;
+    }
 
     @Override
     public String toString() {

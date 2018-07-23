@@ -46,6 +46,10 @@ public class SalariedEmployee extends Employee {
         this.salary = salary;
     }
 
+    public double earnings() {
+        return this.salary;
+    }
+    
     @Override
     public String toString() {
         return "SalariedEmployee{" + super.toString() + " salary=" + salary + '}';
