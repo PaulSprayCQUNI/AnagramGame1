@@ -29,27 +29,26 @@ import java.time.LocalDate;
  *
  * @author Steven Gordon <s.d.gordon@cqu.edu.au>
  */
-public class Employee {
+public class Employee extends Person {
 
-    private String name;
     private double salary;
     private LocalDate hireDay;
 
     public Employee() {
-        this.name = "";
+        super();
         this.salary = 0.0;
         this.hireDay = LocalDate.of(2018, 7, 9);
     }
 
     public Employee(String name, double salary) {
-        this.name = name;
+        super(name);
         this.salary = salary;
         this.hireDay = LocalDate.of(2018, 7, 9);
 
     }
 
     public Employee(String name, double salary, int year, int month, int day) {
-        this.name = name;
+        super(name);
         this.salary = salary;
         this.hireDay = LocalDate.of(year, month, day);
     }
@@ -101,34 +100,17 @@ public class Employee {
         this.salary = salary;
     }
 
-    /**
-     * Get the value of name
-     *
-     * @return the value of name
-     */
-    public String getName() {
-        return name;
-    }
-
-    /**
-     * Set the value of name
-     *
-     * @param name new value of name
-     */
-    public void setName(String name) {
-        this.name = name;
-    }
-
     public void raiseSalary(double byPercent) {
         this.salary = this.salary + this.salary * byPercent / 100;
     }
 
-    @Override
-    public String toString() {
-        return "Employee{" + "name: " + name + "; salary: " + salary + "; hireDay:" + hireDay + '}';
+    public String getDescription() {
+        return "employee " + super.getName() + " has salary " + this.getSalary();
     }
 
-    
-    
+    @Override
+    public String toString() {
+        return "Employee{" + "name: " + super.getName() + "; salary: " + salary + "; hireDay:" + hireDay + '}';
+    }
 
 }
