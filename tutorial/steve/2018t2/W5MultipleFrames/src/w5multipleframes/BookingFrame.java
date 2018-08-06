@@ -57,6 +57,7 @@ public class BookingFrame extends JFrame {
     private class ButtonAction implements ActionListener {
 
         public void actionPerformed(ActionEvent event) {
+            // Get the name of the button
             String btnPressed = event.getActionCommand();
 
             if (btnPressed == "Edit") {

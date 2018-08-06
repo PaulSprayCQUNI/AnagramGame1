@@ -9,9 +9,11 @@ import java.awt.Frame;
 import java.awt.GridLayout;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
-import javax.swing.JButton;
-import javax.swing.JFrame;
-import javax.swing.JLabel;
+import javax.swing.*;
+
+
+import java.text.SimpleDateFormat;
+import java.util.Date;
 
 /**
  *
@@ -24,7 +26,7 @@ public class EditFrame extends JFrame {
     private JButton btn2;
 
     EditFrame() {
-        this.setLayout(new GridLayout(2, 1));
+        this.setLayout(new GridLayout(1, 3));
 
         lbl1 = new JLabel("EditFrame");
 
@@ -33,12 +35,13 @@ public class EditFrame extends JFrame {
         action = new ButtonAction();
         btn1.addActionListener(action);
 
-        btn2 = new JButton("Nothing");
+        btn2 = new JButton("Date");
         action = new ButtonAction();
         btn2.addActionListener(action);
 
         this.add(lbl1);
         this.add(btn1);
+        this.add(btn2);
     }
 
     private class ButtonAction implements ActionListener {
@@ -62,8 +65,10 @@ public class EditFrame extends JFrame {
                 }
 
             }
-            if (btnPressed == "Nothing") {
-                System.out.println("Nothing");
+            if (btnPressed == "Date") {
+                Date testDate;
+                SimpleDateFormat DATE_FORMAT = new SimpleDateFormat("dd-MM-yy:HH:mm");
+                System.out.printf("%s\n", DATE_FORMAT.format(new Date()));
             }
 
         }
