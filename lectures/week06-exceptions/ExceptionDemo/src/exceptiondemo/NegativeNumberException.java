@@ -18,6 +18,6 @@ public class NegativeNumberException extends IOException {
     }
 
     public NegativeNumberException(String message) {
-        super("Cannot have a negative answer: " + message);
+        super("Steve doesnt like negative numbers: " + message);
     }
 }

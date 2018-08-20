@@ -67,9 +67,9 @@ public class ExceptionDemo {
     
     public int subtract() throws IOException {
         if (a - b < 0) {
-            throw new IOException();
+            //throw new IOException();
             
-            //throw new NegativeNumberException("subtract()");
+            throw new NegativeNumberException("a - b is negative in subtract()");
         }
         else {
             return a-b;
