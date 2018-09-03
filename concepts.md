@@ -39,11 +39,58 @@ Note the above is not the only classification of programming paradigms, and most
 * **Static variables** are shared across objects of same class
 * **Static methods** do not operate on objects (only primitive types and static variables)
 
+## Composition
+
+* One class has an instance variable that is of another class/type
+* A class is **composed** of others, i.e. **has-a** relationship
+```
+Example:
+ - class Address includes street, city, postCode, country instance variables
+ - class Person includes name, birthDate, address instance variables
+ - address instance variable is of class Address
+ - a Person has-a Address
+ ```
+
 ## Inheritance
 
 * One class can **inherit** members (instance variables, methods) from another class, i.e. **is-a** relationship
+```
+Example:
+ - class Employee is-a Person
+ - Employee includes salary and startDate instance variables
+ - Employee inherits name, birthDate, address instance variables, as well as methods, from Person class
+```
 * A **subclass** inherits from a **superclass** using the **extend** keyword
 * **super** refers to the superclass
 * Methods from superclass can be **overridden** in the subclass with **@Override** keyword
 * **Object** is the **cosmic superclass**
 * **toString()** method prints the object as a string; useful for debugging
+
+## Abstract Classess and Methods
+
+* An **abstract class** is a class that cannot be instantiated (i.e. cannot create objects of this class), but other classes can inherit from
+```
+Example:
+ - set Person class as an abstract class
+ - Employee inherits from Person
+ - can create an Employee object, but cannot create a Person object
+ ```
+ * Set to abstract using the **abstract** keyword after the access modifier
+ * An **abstract method** defines the method name, parameters and return type, but contains no code
+ * Any class containing an abstract methods MUST be an abstract class
+ * But an abstract class does not necessarily have to include an abstract method
+ 
+ ## Polymorphism
+ 
+ * **Polymorphism** is when an object variable can refer to multiple different types
+ * Java selects the method to call based on the type of variable when the code is running (**dynamic binding**)
+ * Alternatively, if Java knows the method during compilation (e.g. private, static, final, constructor method) then called **static binding**
+ 
+ ## GUI
+ 
+ * JFrame often has a layout, such as Grid, Flow or Border
+ * Frames can include JPanels, and panels can be placed inside each other, each panel with own layout
+ * GUI elements are added to panels (or direct to frame)
+ * Elements include: JTextField, JLabel, JButton, JCheckBox, JRadioButton, JTextArea
+ * When buttons are pressed, events occur and corresponding actions are performed. If a button implements the ActionListener interface, then it must have the actionPerformed method
+ 
