@@ -30,9 +30,12 @@ public class RequestWriter {
             System.exit(1);
         }
 
-        // Write people to file
+        // Write requests to file
         for (Request r : listRequests) {
-            output.format("%s,%s%n", r.getRequestNumber(), r.getRequestId());
+            // %s means string
+            // %d means integer
+            // %n means newline
+            output.format("%s %s%n", r.getRequestNumber(), r.getRequestId());
         }
 
         // Close the file

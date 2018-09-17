@@ -10,6 +10,7 @@ import java.awt.Frame;
 import java.awt.GridLayout;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
+import java.io.IOException;
 import java.util.ArrayList;
 import javax.swing.JButton;
 import javax.swing.JFrame;
@@ -43,7 +44,10 @@ public class BookingFrame extends JFrame {
     BookingFrame() {
         this.setLayout(new GridLayout(3, 2));
 
-        listRequests = new ArrayList<>(10);
+        //listRequests = new ArrayList<>(10);
+        // Read list of requests from space separated file
+        RequestReader rl = new RequestReader("requests.txt");
+        listRequests = rl.getRequestList();
 
         lbl1 = new JLabel("BookingFrame");
 
