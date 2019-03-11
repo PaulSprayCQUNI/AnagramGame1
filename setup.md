@@ -77,6 +77,12 @@ When completing a tutorial question you will often have at least two classes: th
 
 ### Useful Shortcuts
 
+A nice printable cheat sheet for Netbeans and Java shortcuts: [Highlights of NetBeans IDE 8.0 Keyboard Shortcuts & Code Templates](https://netbeans.org/project_downloads/usersguide/shortcuts-80.pdf)
+
+Some Java specific cheat sheets are:
+- https://introcs.cs.princeton.edu/java/11cheatsheet/
+- https://github.com/in28minutes/java-cheat-sheet
+
 A few ways to automatically generate/format code:
 
 1. Insert a constructor: _Source_ -> _Insert Code ..._ -> _Constructor ..._ or `Alt-Insert`
