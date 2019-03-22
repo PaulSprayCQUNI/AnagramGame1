@@ -7,7 +7,8 @@ package person;
 
 /**
  *
- * @author 12084819
+ * @author 12084819 
+ * paul.spray@cqumail.com
  */
 public class Lecturer extends Person{
     
