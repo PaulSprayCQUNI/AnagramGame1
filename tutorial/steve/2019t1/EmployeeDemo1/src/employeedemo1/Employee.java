@@ -15,6 +15,7 @@ public class Employee {
     private String lastName;
     private double salary;
 
+    /* Constructors */
     public Employee() {
         this.firstName = "Steve";
         this.lastName = "Gordon";
