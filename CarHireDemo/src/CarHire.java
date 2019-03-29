@@ -1,6 +1,6 @@
 // Programmer: Paul Spray S1208419
 // File: CarHire.java
-// Date: September 28 2018
+// Date: October 01 2018
 // Purpose: COIT11222 assignment two T2-18
 // Step One of Assignment
 
