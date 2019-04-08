@@ -11,7 +11,8 @@ package tuna;
  * package Tuna is all about talking about inheritance and is based on the
  * tutorial at https://www.youtube.com/watch?v=9JpNY-XAseg - the new boston.
  * 
- *  //event handling - tutorial 52 and 53
+ *  //event handling - tutorial 52 and 53 and 54
+ * //53 adds some functionality to the class by adding action listener objects
  */
 import java.awt.FlowLayout;         // default layout management
 import java.awt.event.ActionListener;          // basic window
@@ -49,8 +50,8 @@ public class Tuna extends JFrame {    // Tuna inherits all the attributes and me
                                                     // Tutorial 53 - build a listener object here to do something in connection to another class that it is listening to
                                                     
         theHandler handler = new theHandler();      // the event handler needs to take an object as an argument
-        item1.addActionListener(handler);
-        item2.addActionListener(handler);
+        item1.addActionListener(handler);           // in order to handle events, the class with the method handling the events needs to implement the ActionListener class
+        item2.addActionListener(handler);           // sometimes other classes and objects need to listen for events, so a class and method that takes the event as an argument is needed for a particular event
         item3.addActionListener(handler);
         passwordField.addActionListener(handler);
         
