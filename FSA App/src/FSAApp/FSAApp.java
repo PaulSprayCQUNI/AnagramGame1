@@ -22,8 +22,9 @@ public class FSAApp {
             FSAAppFrame frame = new FSAAppFrame();
             frame.setTitle("FSA Rental Program - Welcome");
             frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
-            frame.setSize(600, 300);
+            frame.setSize(300, 200);
             frame.setVisible(true);
+            frame.setResizable(false);
         });
 }
         
